@@ -1,45 +1,21 @@
-//== Colours
-
+// Color variables
 $white:                 #fff;
 $black:                 #000;
 
-//== Fonts
+// Font config
 
-//== Page gutters
+// Page gutter
+$page-gutter:           16px;
 
-$page-gutter-sm:        10px;
-$page-gutter-md:        20px;
-$page-gutter-lg:        32px;
+// Screen breakpoints
+// S, tablet screen
+$tablet:                768px !default;
 
-$corner-radius:         5px;
+// L screen 
+$desktop-l:             1024px !default;
 
-//== Media queries breakpoints
+// XL screen
+$desktop-xl:            1400px !default;
 
-// Small screen / tablet
-$screen-sm:             769px !default;
-$screen-sm-min:         $screen-sm !default;
-$screen-tablet:         $screen-sm-min !default;
-
-// Medium screen / desktop
-$screen-md:             1025px !default;
-$screen-md-min:         $screen-md !default;
-$screen-desktop:        $screen-md-min !default;
-
-// Large screen / wide desktop
-$screen-lg:             1400px !default;
-$screen-lg-min:         $screen-lg !default;
-$screen-lg-desktop:     $screen-lg-min !default;
-
-
-//== CDN / Asset paths
-
-$cdn-path: '' !default;
-
-//== Folders allowing for external overrides
-
-$zindex-bg: 10;
-$zindex-base: 100;
-$zindex-nav: 600;
-$zindex-dropdown: 700;
-$zindex-overlay: 800;
-$zindex-modal: 900;
+// Asset paths
+$asset-path: '' !default;
