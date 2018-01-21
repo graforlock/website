@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bundle": "browserify -t babelify js/main.js -o assets/bundle.js", 
     "test": "browserify _js/**/**.spec.js -t babelify | tape-run"
   },
   "repository": {
