@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thank you
+title: Thank you! | Mobile App Agency
 permalink: /thankyou/
 ---
 
