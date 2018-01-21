@@ -16,4 +16,4 @@ class EstimateHandler {
    }
 }
 
-module.exports = EstimateHandler
+export default EstimateHandler
