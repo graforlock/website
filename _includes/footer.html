@@ -2,7 +2,15 @@
     <section class="footer__company-info">
         <img class="footer__company-logo" src="" alt="Company info logo">
         <address>
-            <!-- address, email, info, etc... -->
+            <a href="mailto:{{ site.data.company_info.email }}">
+                {{ site.data.company_info.email }}
+            </a>
+            <br>
+            <a href="tel:{{ site.data.company_info.phone }}">
+                {{ site.data.company_info.phone }}
+            </a>
+            <br>
+            {{ site.data.company_info.address }}
         </address>
     </section>
     <nav class="footer__navigation">

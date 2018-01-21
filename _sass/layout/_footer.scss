@@ -1,11 +1,18 @@
 .footer {
     margin: $base;
 
-    &__company-info {}
+    &__company-info {
+        display: inline-block;
+        vertical-align: top;
+    }
     &__company-logo {}
-    &__navigation {}
+    &__navigation {
+        display: inline-block;
+    }
     &__links {
+        display: inline-block;
         list-style: none;
+        vertical-align: top;
     }
     &__item {}
 }
