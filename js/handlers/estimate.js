@@ -6,7 +6,7 @@ class EstimateHandler {
 
    redirectToThankYouPage(e) {
        e.preventDefault()
-       window.location.href = '/thankyou'
+       window.location.href = '/website/thankyou'
    }
 
    redirectOnSubmit() {
