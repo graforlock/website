@@ -1,21 +1,11 @@
 .footer {
-   &__company-info {
+    margin: $base;
 
-   } 
-
-   &__company-logo {
-
-   }
-
-   &__navigation {
-
-   }
-
-   &__links {
-
-   }
-
-   &__item {
-
-   }
+    &__company-info {}
+    &__company-logo {}
+    &__navigation {}
+    &__links {
+        list-style: none;
+    }
+    &__item {}
 }
