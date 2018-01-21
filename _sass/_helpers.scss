@@ -1,0 +1,9 @@
+%button {
+    border-radius: $base;
+    padding: $base / 3 $base;
+}
+
+%center-list {
+    display: table;
+	margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+.navbar {
+    padding: $base 0;
+
+    &__list {
+        @extend %center-list;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline;
+        margin: 0 $base / 2;
+
+        &--estimate {
+            display: inline;
+        }
+    }
+}

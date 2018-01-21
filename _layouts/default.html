@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {% include head.html %}
-</head>
+{% include head.html %}
 <body>
     {% include navbar.html %}
-    <main>
+    <main class="main-content">
         {{ content}}
     </main>
     {% include footer.html %}
+    <script type="module" src="{{ "/js/main.js " | prepend: site.baseurl }}"></script>
 </body>
 </html>

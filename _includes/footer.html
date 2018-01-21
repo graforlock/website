@@ -1,1 +1,19 @@
-<footer></footer>
+<footer class="footer">
+    <section class="footer__company-info">
+        <img class="footer__company-logo" src="" alt="Company info logo">
+        <address>
+            <!-- address, email, info, etc... -->
+        </address>
+    </section>
+    <nav class="footer__navigation">
+        {% for links in site.data.navigation %}
+            <ul class="footer__links">
+                {% for link in links[1] %}
+                    <li class="footer__item">
+                        <a href=/website/{{ link.url }}>{{ link.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </nav>
+</footer>
