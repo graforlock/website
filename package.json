@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify _js/**/**.spec.js | tape-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobileappagency/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobileappagency/website/issues"
+  },
+  "homepage": "https://github.com/mobileappagency/website#readme",
+  "devDependencies": {
+    "babel-tape-runner": "^2.0.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0",
+    "tape": "^4.8.0",
+    "tape-run": "^3.0.1"
+  },
+  "dependencies": {
+    "most": "^1.7.2"
+  }
+}
