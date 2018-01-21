@@ -10,9 +10,9 @@ html { font-size: 16px; }
 .navbar__item { display: inline; margin: 0 8px; }
 .navbar__item--estimate { display: inline; }
 
-.main-content { min-height: 70vh; margin: 16px; }
+.main-content { min-height: 70vh; padding: 16px; }
 
-.footer { margin: 16px; }
+.footer { padding: 16px; }
 .footer__company-info { display: inline-block; vertical-align: top; }
 .footer__navigation { display: inline-block; }
 .footer__links { display: inline-block; list-style: none; vertical-align: top; }
