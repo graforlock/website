@@ -1,5 +1,3 @@
-const { fromEvent } = require('most')
-
 class EstimateHandler {
    constructor() {
        this.formElement = document.querySelector('.estimate__form')

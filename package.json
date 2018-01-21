@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "browserify _js/**/**.spec.js | tape-run"
+    "test": "browserify _js/**/**.spec.js -t babelify | tape-run"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mobileappagency/website#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
     "babel-tape-runner": "^2.0.1",
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",

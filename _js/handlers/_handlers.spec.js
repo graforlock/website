@@ -1,6 +1,6 @@
-const test = require('tape')
+import test from 'tape'
 
-const EstimateHandler = require('./estimate')
+import EstimateHandler from './estimate'
 
 class MockEstimateHandler extends EstimateHandler {
     constructor() {
