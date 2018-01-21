@@ -9,7 +9,9 @@
         {% for links in site.data.navigation %}
             <ul class="footer__links">
                 {% for link in links[1] %}
-                    <li class="footer__item">{{ link.name }}</li>
+                    <li class="footer__item">
+                        <a href=/website/{{ link.url }}>{{ link.name }}</a>
+                    </li>
                 {% endfor %}
             </ul>
         {% endfor %}
