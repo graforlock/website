@@ -1,8 +1,16 @@
-- name: About
-  url: about
+menu:
+  - name: About
+    url: about
 
-- name: Contact
-  url: contact
+  - name: Contact
+    url: contact
 
-- name: Clients
-  url: clients
+  - name: Clients
+    url: clients
+
+services:
+  - name: IOS
+    url: services/ios
+  
+  - name: Android
+    url: services/android

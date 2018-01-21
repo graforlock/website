@@ -3,7 +3,7 @@
         <li class="navbar__item">
             <img class="navbar__logo" src="" alt="Navbar company logo">
         </li>
-        {% for item in site.data.navigation %}
+        {% for item in site.data.navigation.menu %}
             <li class="navbar__item"><a href=/website/{{ item.url }} >{{ item.name }}</a></li>
         {% endfor %}
         <li class="navbar__item--estimate">

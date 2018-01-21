@@ -6,17 +6,12 @@
         </address>
     </section>
     <nav class="footer__navigation">
-        <ul class="footer__links">
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-        </ul>
-        <ul class="footer__links">
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-            <li class="footer__item"></li>
-        </ul>
+        {% for links in site.data.navigation %}
+            <ul class="footer__links">
+                {% for link in links[1] %}
+                    <li class="footer__item">{{ link.name }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
     </nav>
 </footer>
