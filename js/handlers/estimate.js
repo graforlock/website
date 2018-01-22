@@ -2,10 +2,13 @@ class EstimateHandler {
    constructor() {
        this.formElement = document.querySelector('.estimate__form')
        this.redirectOnSubmit()
-   } 
+   }
+
+   handleSubmit(e) {}
 
    redirectToThankYouPage(e) {
        e.preventDefault()
+       this.handleSubmit(e)
        window.location.href = '/website/thankyou'
    }
 

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "browserify -t babelify js/main.js -o assets/bundle.js", 
-    "test": "browserify _js/**/**.spec.js -t babelify | tape-run"
+    "bundle": "browserify -t babelify js/main.js -o assets/bundle.js",
+    "test": "browserify _js/**/**.spec.js -t babelify | tape-run",
+    "watch": "bundle exec jekyll serve && ./node_modules/.bin/watchify -t ./js/main.js -o assetsundle.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",
     "tape": "^4.8.0",
-    "tape-run": "^3.0.1"
+    "tape-run": "^3.0.1",
+    "watchify": "^3.9.0"
   }
 }
