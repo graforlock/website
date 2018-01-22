@@ -1,18 +1,33 @@
 @import url(normalize.css);
-html { font-size: 16px; }
-
-.estimate__button { border-radius: 16px; padding: 5.3333333333px 16px; }
+.estimate__button, .estimate__submit { border: 1px solid #642dff; padding: 5.3333333333px 16px; background: #642dff; color: #fff; cursor: pointer; }
+.estimate__button:hover, .estimate__submit:hover { background: #5c23ff; border: 1px solid #642dff; }
+.estimate__button a, .estimate__submit a { color: #fff; }
 
 .navbar__list { display: table; margin: 0 auto; }
 
-.navbar { padding: 16px 0; }
+.about__header { text-align: center; }
+.about__textcontent { text-align: center; }
+
+html { background: #642dff; font-size: 16px; font-family: "Roboto", sans-serif; color: #642dff; }
+
+body { background: #fff; }
+
+a { text-decoration: none; }
+
+a, p { font-family: "Open Sans", sans-serif; }
+
+h1 { font-size: 80px; }
+
+.navbar { padding: 16px 0; border-bottom-color: rgba(100, 45, 255, 0.14); border-bottom-style: solid; border-bottom-width: 1px; }
 .navbar__list { list-style: none; padding: 0; }
-.navbar__item { display: inline; margin: 0 8px; }
+.navbar__item { display: inline; margin: 0 8px; border-bottom: 1px solid #1DE9B6; }
 .navbar__item--estimate { display: inline; }
 
 .main-content { min-height: 70vh; padding: 16px; }
 
-.footer { padding: 16px; }
+.footer { background: #642dff; padding: 16px; min-height: 30vh; }
 .footer__company-info { display: inline-block; vertical-align: top; }
 .footer__navigation { display: inline-block; }
 .footer__links { display: inline-block; list-style: none; vertical-align: top; }
+.footer__item { padding: 4px 0; }
+.footer__item a { color: white; }
