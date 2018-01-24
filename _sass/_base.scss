@@ -6,3 +6,26 @@
 @import 'modules/about';
 @import 'modules/estimate';
 @import 'modules/error';
+
+html {
+    background: $purple;
+    font-size: $base;
+    font-family: $font-primary;
+    color: $purple;
+}
+
+body {
+    background: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p {
+    font-family: $font-secondary;
+}
+
+h1 {
+    font-size: $h1;
+}

@@ -1,6 +1,18 @@
 %button {
-    border-radius: $base;
+    border: 1px solid $purple;
     padding: $base / 3 $base;
+    background: $purple;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        background: darken($purple, 2%);
+        border: 1px solid $purple;
+    }
+
+    a {
+        color: $white;
+    }
 }
 
 %center-list {

@@ -4,4 +4,4 @@ title: About | Mobile App Agency
 permalink: /about/
 ---
 
-About text
+lorem ipsum something in the way...
