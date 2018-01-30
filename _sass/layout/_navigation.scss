@@ -1,5 +1,8 @@
 .navbar {
     padding: $base 0;
+    border-bottom-color: $purple;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
 
     &__list {
         @extend %center-list;
@@ -10,6 +13,7 @@
     &__item {
         display: inline;
         margin: 0 $base / 2;
+        border-bottom: 1px solid #1DE9B6;
 
         &--estimate {
             display: inline;

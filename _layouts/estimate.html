@@ -5,31 +5,40 @@ layout: default
 <section class="estimate">
 
     <div class="estimate__content">
-        <h1>What we are able to deliver?</h1>
-        <ul>
-            <li>modern mobile applications</li>
-            <li>ultimate solutions for the business</li>
-            <li>extraordinary end user experience</li>
+        {% include header.html masthead="What are we able to deliver?" %}
+        <ul class="estimate__services">
+            <li class="estimate__service">modern mobile applications</li>
+            <li class="estimate__service">ultimate solutions for the business</li>
+            <li class="estimate__service">extraordinary end user experience</li>
         </ul>
-        <h2>...and many more. Just give us a shout!</h2>
+        <h2 class="estimate__footer">...and many more. Just give us a shout!</h2>
     </div>
 
-    <form action="" class="estimate__form">
-        <label for="firstname">Name</label>
-        <input class="estimate__form--name-input" id="firstname" type="text" placeholder="Name">
+    <form action="https://formspree.io/xxxgmail.com" method="POST" class="estimate__form">
+        <fieldset>
+        <label for="name">Your Name</label>
+        <input class="estimate__form--name-input" id="name" name="name" type="text" placeholder="John">
+        <label for="surname">Surname</label>
+        <input class="estimate__form--name-input" id="surname" name="surname" type="text" placeholder="Doe">
+        </fieldset>
 
-        <label for="lastname">Last Name</label>
-        <input class="estimate__form--lastname-input" id="lastname" type="text" placeholder="Last Name">
-
+        <fieldset>
         <label for="email">Email</label>
-        <input class="estimate__form--email" type="text" id="email" placeholder="Email">
-
+        <input class="estimate__form--email" type="text" id="email" name="_replyto" placeholder="myemail@gmail.com">
         <label for="phone">Phone Number</label>
-        <input class="estimate__form--phone" type="text" id="phone" placeholder="Phone Number">
+        <input class="estimate__form--phone" type="text" id="phone" name="phone" placeholder="Phone Number">
+        </fieldset>
 
-        <label class="estimate_form--textarea-info" for="textarea">how can we help you?</label>
-        <textarea id="textarea"></textarea>
+        <fieldset>
+        <label class="estimate_form--textarea-info" for="content">how can we help you?</label>
+        <textarea id="content" name="content"></textarea>
 
-        <input type="submit">Submit</input>
+        <input type="hidden" name="_subject" value="New estimate enquiry" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <input class="estimate__submit" type="submit" value="Send">
+        </fieldset>
+
     </form>
+
 </section>
