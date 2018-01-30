@@ -1,8 +1,8 @@
 .navbar {
     padding: $base 0;
-    border-bottom-color: rgba(red($purple), green($purple), blue($purple),0.14);
+    border-bottom-color: $purple;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 3px;
 
     &__list {
         @extend %center-list;

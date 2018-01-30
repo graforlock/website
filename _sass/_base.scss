@@ -28,4 +28,16 @@ a, p {
 
 h1 {
     font-size: $h1;
+    margin: $base auto;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid $purple;
+    max-width: $base * 4;
+    margin: $base * 2 auto;
 }

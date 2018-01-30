@@ -1,2 +1,8 @@
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;;
+
+.heading {
+    &__masthead {
+        text-align: center;
+    }
+}
