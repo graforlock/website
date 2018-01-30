@@ -8,6 +8,9 @@ menu:
   - name: Clients
     url: clients
 
+  - name: Services
+    url: services
+
 services:
   - name: IOS
     url: services/ios

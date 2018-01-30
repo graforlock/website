@@ -1,0 +1,52 @@
+.services {
+    text-align: center;
+
+    &__content {
+        margin-bottom: $base * 2;
+    }
+
+    &__footer {
+        margin-bottom: $base;
+        text-align: center;
+        position: relative;
+        border: 1px solid $purple;
+        border-bottom-width: 3px;
+        display: inline-block;
+        padding: $base * 2;
+        font-weight: 100;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+        margin: 0 0 $base 0;
+    }
+
+    &__service {
+        display: inline-block;
+        padding: 0 $base;
+
+        &:first-child {
+            border-right: 1px solid $purple;
+        }
+
+        &:last-child {
+            border-left: 1px solid $purple;
+        }
+    }
+
+    .technology {
+        &__list {
+            padding: 0;
+            font-size: 0;
+            list-style: none;
+        }
+
+        &__item {
+            display: inline-block;
+            background: $purple;
+            width: 33%;
+            height: 30vh;
+        }
+    }
+}
