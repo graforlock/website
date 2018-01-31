@@ -36,17 +36,27 @@
     }
 
     .technology {
+        &__electron {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            padding: $base * 2;
+        }
+
         &__list {
-            padding: 0;
+            background: $purple;
+            box-sizing: border-box;
+            padding: $base;
             font-size: 0;
             list-style: none;
         }
 
         &__item {
             display: inline-block;
-            background: $purple;
             width: 33%;
             height: 30vh;
+            vertical-align: top;
+            position: relative;
         }
     }
 }
