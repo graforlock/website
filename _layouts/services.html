@@ -3,24 +3,37 @@ layout: default
 ---
 
 <section class="services">
-  {% include header.html masthead="What are we able to deliver?" %}
     <section class="services__content">
+        {% include header.html masthead="What are we able to deliver?" %}
         <ul class="services__list">
             <li class="services__service">Native Android & IOS apps</li>
             <li class="services__service">Machine Learning experience</li>
             <li class="services__service">Cross-platform software</li>
         </ul>
-        <h2 class="services__footer">...and many more. Just give us a shout!</h2>
+        <hr>
       </section>
 
-    <section class="services__technology">
-      <ul class="technology__list">
-        <li class="technology__item"></li>
-        <li class="technology__item">
-          <img class="technology__electron" src="{{ "/assets/electron.svg" | prepend: site.baseurl }}" alt="Electron logo">
-        </li>
-        <li class="technology__item"></li>
-      </ul>
+      <section class="technology technology--purple">
+        <ul class="technology__list">
+          <li class="technology__item">
+            <p>Android</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="technology__item">
+            <p>IOS</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="technology__item">
+            <p>NodeJs</p>
+            
+            <img src="{{ "/assets/nodejs.svg " | prepend: site.baseurl }}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+        </ul>
+      </section>
+
+    <section class="services__content services__content--half">
+      <h2 class="services__footer">And there's much more. <span class="services__contact">Contact us.</span></h2>
     </section>
 
   <p class="">{{ content }}</p>

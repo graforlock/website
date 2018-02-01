@@ -19,3 +19,7 @@
     display: table;
 	margin: 0 auto;
 }
+
+@mixin underlined($width: 3px) {
+    border-bottom: $width solid $green;
+}

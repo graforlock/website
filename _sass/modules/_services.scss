@@ -2,7 +2,15 @@
     text-align: center;
 
     &__content {
-        margin-bottom: $base * 2;
+        margin-bottom: $base;
+        min-height: 100vh;
+
+        &--half {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__footer {
@@ -35,28 +43,62 @@
         }
     }
 
-    .technology {
-        &__electron {
-            height: 100%;
-            width: 100%;
-            box-sizing: border-box;
-            padding: $base * 2;
-        }
+    &__contact {
+        @include underlined;
+    }
+}
 
-        &__list {
-            background: $purple;
-            box-sizing: border-box;
-            padding: $base;
-            font-size: 0;
-            list-style: none;
-        }
+.technology {
+    width: calc(100% + #{$base * 2});
+    margin-left: -$base;
+    padding: $base 0;
+    text-align: center;
+    min-height: 100vh;
+    
+    &--purple {
+        background: $purple;
+    }
 
-        &__item {
+    &__electron,
+    &__node {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: $base * 2;
+    }
+
+    &__heading {
+        color: $white;
+    }
+
+    &__foreword {
+        color: $white;
+        max-width: $desktop-l / 2;
+        line-height: $base * 1.5;
+        margin: $base auto;
+    }
+
+    &__list {
+        box-sizing: border-box;
+        padding: $base;
+        font-size: 0;
+        list-style: none;
+    }
+
+    &__item {
+        color: $white;
+        font-size: $base;
+        display: inline-block;
+        width: 33%;
+        height: 30vh;
+        vertical-align: top;
+        position: relative;
+
+        p:first-child {
             display: inline-block;
-            width: 33%;
-            height: 30vh;
-            vertical-align: top;
-            position: relative;
+            padding-bottom: $base;
+            @include underlined;
         }
     }
+
 }
