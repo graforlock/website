@@ -29,8 +29,6 @@
     &__form {
         box-sizing: border-box;
         display: inline-block;
-        background: $purple;
-        color: $white;
         font-weight: 100;
         width: 100%;
         max-width: $desktop-xl / 3.5;
@@ -50,10 +48,8 @@
     }
 
     &__input, &__text-content {
-        background: $white;
-        border: 1px solid $white;
+        border: 1px solid gainsboro;
         padding: $base / 2;
-        color: $purple;
 
         &::placeholder {
             color: $purple;
@@ -63,6 +59,7 @@
     }
 
     &__input--submit {
-        @extend %button--on-purple;
+        border: 1px solid $purple;
+        @extend %button;
     }
 }
