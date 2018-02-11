@@ -5,33 +5,64 @@
         @extend %button;
     }
 
+    &__label {
+        box-sizing: border-box;
+        width: 33%;
+        padding-right: $base;
+        vertical-align: middle;
+    }
+
+    &__label, &__input {
+        display: inline-block;
+    }
+
+    &__input, &__submit {
+        width: 66%;
+    }
+
+    &__input-group {
+        border: none;
+        padding: $base / 2 0;
+    }
+
+
     &__form {
+        box-sizing: border-box;
         display: inline-block;
         background: $purple;
         color: $white;
         font-weight: 100;
-        max-width: $desktop-xl / 2;
+        width: 100%;
+        max-width: $desktop-xl / 3.5;
         margin-bottom: $base * 2;
+        padding: $base;
 
-        fieldset {
-            border: none;
-        }
+    }
 
-        input, textarea {
-            background: $white;
-            border: 1px solid $white;
-            padding: $base / 2;
+    &__more-info {
+        display: block;
+        padding: $base;
+    }
+
+    &__text-content {
+        width: 100%;
+        resize: none;
+    }
+
+    &__input, &__text-content {
+        background: $white;
+        border: 1px solid $white;
+        padding: $base / 2;
+        color: $purple;
+
+        &::placeholder {
             color: $purple;
-
-            &::placeholder {
-                color: $purple;
-                font-weight: 100;
-                opacity: 0.95;
-            }
+            font-weight: 100;
+            opacity: 0.9;
         }
     }
 
-    &__submit {
-        @extend %button;
+    &__input--submit {
+        @extend %button--on-purple;
     }
 }

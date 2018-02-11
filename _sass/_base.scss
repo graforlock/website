@@ -42,3 +42,16 @@ hr {
     max-width: $base * 4;
     margin: $base * 2 auto;
 }
+
+input, textarea, label {
+    box-sizing: border-box;
+}
+
+input[type=submit], button {
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    outline: $green solid 2px;
+}
