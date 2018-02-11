@@ -28,8 +28,12 @@ a, p {
 }
 
 h1 {
-    font-size: $h1;
+    font-size: $h3;
     margin: $base auto;
+
+    @media screen and (min-width: $desktop-l) {
+        font-size: $h1;
+    }
 }
 
 h4 {
@@ -41,4 +45,18 @@ hr {
     border-bottom: 1px solid $purple;
     max-width: $base * 4;
     margin: $base * 2 auto;
+}
+
+input, textarea, label {
+    box-sizing: border-box;
+    color: $purple;
+}
+
+input[type=submit], button {
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    outline: $green solid 2px;
 }

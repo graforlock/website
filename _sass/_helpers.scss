@@ -15,6 +15,13 @@
     }
 }
 
+%button--on-purple {
+    &:hover {
+        background: darken($white, 2%);
+        border: 1px solid $white;
+    } 
+}
+
 %center-list {
     display: table;
 	margin: 0 auto;

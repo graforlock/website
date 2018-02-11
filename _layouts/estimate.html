@@ -7,30 +7,29 @@ layout: default
     {% include header.html masthead="Estimate your app cost" %}
 
     <form action="https://formspree.io/xxxgmail.com" method="POST" class="estimate__form">
-        <fieldset>
-        <label for="name">Your Name</label>
-        <input class="estimate__form--name-input" id="name" name="name" type="text" placeholder="John">
-        <label for="surname">Surname</label>
-        <input class="estimate__form--name-input" id="surname" name="surname" type="text" placeholder="Doe">
+        <fieldset class="estimate__input-group">
+            <label class="estimate__label" for="name">Your Name</label><!--
+            --><input class="estimate__input" id="name" name="name" type="text" placeholder="John" required>
         </fieldset>
 
-        <fieldset>
-        <label for="email">Email</label>
-        <input class="estimate__form--email" type="text" id="email" name="_replyto" placeholder="myemail@gmail.com">
-        <label for="phone">Phone Number</label>
-        <input class="estimate__form--phone" type="text" id="phone" name="phone" placeholder="Phone Number">
+        <fieldset class="estimate__input-group">
+            <label class="estimate__label" for="email">Email</label><!--
+            --><input class="estimate__input" type="text" id="email" name="_replyto" placeholder="myemail@gmail.com" required>
+        </fieldset>
+        <fieldset class="estimate__input-group">
+            <label class="estimate__label" for="phone">Phone No.</label><!--
+            --><input class="estimate__input" type="text" id="phone" name="phone" placeholder="+44 20 1111 2222">
         </fieldset>
 
-        <fieldset>
-        <label class="estimate_form--textarea-info" for="content">how can we help you?</label>
-        <textarea id="content" name="content"></textarea>
-
-        <input type="hidden" name="_subject" value="New estimate enquiry" />
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <input class="estimate__submit" type="submit" value="Send">
+        <fieldset class="estimate__input-group">
+            <label class="estimate__more-info" for="content">How can we help you?</label>
+            <textarea rows="5" class="estimate__text-content" id="content" name="content" required></textarea>
+            <input type="hidden" name="_subject" value="New estimate enquiry" />
+            <input type="text" name="_gotcha" style="display:none" />
         </fieldset>
-
+        <fieldset class="estimate__input-group">
+            <input class="estimate__input estimate__input--submit" type="submit" value="Submit an enquiry">
+        </fieldset>
     </form>
 
 </section>

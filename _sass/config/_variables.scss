@@ -1,15 +1,17 @@
 // Color variables
 $white:                 #fff;
 $black:                 #000;
+$green:                 #1DE9B6;
 $purple:                #642dff;
+$gray:                  gainsboro;
 
 // Font config
 
 $base: 16px;
-$h1: $base * 5;
-$h2: $base * 4;
-$h3: $base * 3;
-$h4: $base * 2;
+$h1: 5rem;
+$h2: 4rem;
+$h3: 3rem;
+$h4: 2rem;
 
 // Page gutter
 $page-gutter:           16px;
